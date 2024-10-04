@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Bóng Đá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+
+        section, aside {
+            background-color: #fff;
+            padding: 1rem;
+            margin: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        form button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang Bóng Đá</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#">Lịch Thi Đấu</a></li>
+                <li><a href="#">Kết Quả</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Tin Tức Mới Nhất</h2>
+            <article>
+                <h3>Tiêu Đề Bài Viết</h3>
+                <p>Nội dung bài viết...</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Thống Kê</h2>
+            <p>Thông tin thống kê...</p>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2024 Trang Bóng Đá</p>
+    </footer>
+
+    <section>
+        <h2>Liên Hệ</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Tên của bạn" required>
+            <input type="email" id="email" placeholder="Email của bạn" required>
+            <textarea id="message" placeholder="Tin nhắn của bạn" required></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Lịch Thi Đấu 2024</h2>
+        <h3>EURO 2024</h3>
+        <ul>
+            <li>Vòng bảng: 15/06 - 27/06</li>
+            <li>Vòng 1/8: 29/06 - 03/07</li>
+            <li>Tứ kết: 05/07 - 07/07</li>
+            <li>Bán kết: 10/07 - 11/07</li>
+            <li>Chung kết: 15/07</li>
+        </ul>
+        <h3>V-League 2024/2025</h3>
+        <ul>
+            <li>Vòng 1: 03/10</li>
+            <li>Vòng 2: 04/10</li>
+            <li>Vòng 3: 19/10</li>
+            <li>Vòng 4: 26/10</li>
+            <li>Vòng 5: 27/10</li>
+        </ul>
+        <h3>Đội tuyển Việt Nam</h3>
+        <ul>
+            <li>Vòng loại World Cup 2026 khu vực Châu Á: Các trận đấu sẽ diễn ra trong suốt năm 2024</li>
+        </ul>
+    </section>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.');
+        });
+    </script>
+</body>
+</html>
